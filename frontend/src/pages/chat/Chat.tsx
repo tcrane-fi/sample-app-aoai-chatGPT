@@ -13,6 +13,7 @@ import { nord } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 import styles from './Chat.module.css'
 import Contoso from '../../assets/Contoso.svg'
+import filogo from '../../assets/filogo.png'
 import { XSSAllowTags } from '../../constants/sanatizeAllowables'
 
 import {
@@ -108,7 +109,7 @@ const Chat = () => {
 
   useEffect(() => {
     if (!appStateContext?.state.isLoading) {
-      setLogo(ui?.chat_logo || ui?.logo || Contoso)
+      setLogo(ui?.chat_logo || ui?.logo || filogo)
     }
   }, [appStateContext?.state.isLoading])
 
